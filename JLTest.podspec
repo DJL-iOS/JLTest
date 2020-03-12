@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "JLTest"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of JLTest."
+  spec.summary      = "JLTest."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+                 this is JLTest
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/JLTest"
+  spec.homepage     = "https://github.com/DJL-iOS/JLTest.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -52,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "jinlong_dou" => "jinlong.dou@nexttao.com" }
+  spec.author             = { "DJL-iOS" => "15662170403@163.com" }
   # Or just: spec.author    = "jinlong_dou"
   # spec.authors            = { "jinlong_dou" => "jinlong.dou@nexttao.com" }
   # spec.social_media_url   = "https://twitter.com/jinlong_dou"
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/JLTest.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/DJL-iOS/JLTest.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "JLFrameWork/JLFrameWork/**/*.{h,m}"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -129,7 +130,7 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
